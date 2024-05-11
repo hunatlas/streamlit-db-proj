@@ -7,7 +7,7 @@ import json
 #creds = service_account.Credentials.from_service_account_info(key_dict)
 #db = firestore.Client(credentials=creds, project='database-24-415313')
 
-db = firestore.Client.from_service_account_json('database-24-firestore-key.json')
+db = firestore.Client.from_service_account_json('firestore-key.json')
 
 doc_ref = db.collection('books').document('Hyperion')
 doc = doc_ref.get()
